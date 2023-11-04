@@ -29,7 +29,7 @@ module.exports = defineConfig({
             });
           });
         },
-        resetStudents(student) {
+        resetStudent(student) {
           return new Promise((resolve, reject) => {
             const pool = new Pool(dbConfig);
 

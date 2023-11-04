@@ -1,0 +1,12 @@
+{
+  "create": {
+    "student": {
+      "name": "Bruce Wayne",
+      "email": "bruce.wayne@yahoo.com",
+      "age": "30",
+      "weight": "60",
+      "feet_tall": "1.171"
+    },
+    "plan": "Plano Health"
+  }
+}
