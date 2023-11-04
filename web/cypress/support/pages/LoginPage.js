@@ -1,4 +1,4 @@
-import popup from "../pages/components/PopUp";
+import popup from "./components/PopUp";
 
 class LoginPage {
   constructor() {
@@ -9,13 +9,11 @@ class LoginPage {
   }
 
   fill(user) {
-    if (user.email) {
-      cy.get("input[name=email]").clear().type(user.email);
-    }
+    cy.get("input[name=email]").clear().as("email");
+    cy.get("input[name=password]").clear().as("password");
 
-    if (user.password) {
-      cy.get("input[name=password]").clear().type(user.password);
-    }
+    user.email ? cy.get('@email').type(user.email) : cy.log('empyt email');
+    user.password ? cy.get('@password').type(user.password) : cy.log('empty password'); 
   }
 
   submit() {
@@ -28,4 +26,5 @@ class LoginPage {
     this.submit();
   }
 }
+
 export default new LoginPage();
