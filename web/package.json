@@ -1,0 +1,24 @@
+{
+  "name": "healthxp-web-tests",
+  "version": "1.0.0",
+  "description": "Projeto de Automacao de Teste E2E in Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "keywords": [
+    "Automacao",
+    "Cypress",
+    "HealthXP",
+    "E2E"
+  ],
+  "author": "Victor dos Santos",
+  "license": "MIT",
+  "devDependencies": {
+    "@faker-js/faker": "^8.0.2",
+    "cypress": "^13.2.0"
+  },
+  "dependencies": {
+    "pg": "^8.11.3"
+  }
+}
